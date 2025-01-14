@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Quicksand", sans-serif;
   background-color: white;
@@ -27,4 +31,10 @@ body {
 
 .hamburger-active > span:nth-child(3) {
   @apply -rotate-45;
+}
+
+@media (min-width: 768px) {
+  iframe {
+    height: 400px;
+  }
 }

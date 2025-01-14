@@ -12,7 +12,9 @@ window.onscroll = function () {
 
 // Hamburger Active Animate
 const hamburger = document.querySelector("#hamburger");
+const navvMenu = document.querySelector("#nav-menu");
 
 hamburger.addEventListener("click", function () {
   hamburger.classList.toggle("hamburger-active");
+  navvMenu.classList.toggle("hidden");
 });
